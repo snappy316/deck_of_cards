@@ -15,4 +15,10 @@ class Deck
   def shuffle!
     @cards.shuffle!
   end
+
+  def to_s
+    @cards.each do |card|
+      puts card.to_s
+    end
+  end
 end
